@@ -32,5 +32,6 @@ class Launcher:
                     self.light.set_rgb(0, 255, 0)
                 else:
                     self.light.set_rgb(255, 0, 0)
+                current_stock_price = updated_stock_price
             except BulbException:
                 logging.warn("Something went wrong with YeeLight connected...")
